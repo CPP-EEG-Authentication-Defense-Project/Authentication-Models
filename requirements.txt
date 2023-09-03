@@ -1,1 +1,4 @@
+beautifulsoup4==4.12.2
+requests==2.31.0
 jupyterlab==4.0.5
+notebook==7.0.3
