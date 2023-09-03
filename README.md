@@ -36,3 +36,18 @@ This baseline implementation leverages the following sources:
          PMID:1085218; doi: 10.1161/01.CIR.101.23.e215"
 }
 ```
+
+### Music ID Model Design
+
+```
+@ARTICLE{9295315,
+  author={Sooriyaarachchi, Jinani and Seneviratne, Suranga and Thilakarathna, Kanchana and Zomaya, Albert Y.},
+  journal={IEEE Internet of Things Journal}, 
+  title={MusicID: A Brainwave-Based User Authentication System for Internet of Things}, 
+  year={2021},
+  volume={8},
+  number={10},
+  pages={8304-8313},
+  doi={10.1109/JIOT.2020.3044726}
+}
+```

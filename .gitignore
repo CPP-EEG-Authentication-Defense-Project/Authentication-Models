@@ -1,0 +1,13 @@
+# Virtual environment
+venv
+
+# Checkpoints
+.ipynb_checkpoints
+*/.ipynb_checkpoints/*
+
+# IPython
+profile_default/
+ipython_config.py
+
+# IDE config
+.idea
