@@ -16,3 +16,6 @@ ipython_config.py
 
 # IDE config
 .idea
+
+# Sensitive files
+.env
