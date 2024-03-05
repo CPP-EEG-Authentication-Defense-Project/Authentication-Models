@@ -12,4 +12,4 @@ RUN git config --global url.https://$GH_AUTH_TOKEN@github.com/.insteadOf https:/
 RUN pip install --no-cache-dir -r requirements.txt
 COPY jupyter-note-book-entrypoint.sh ./
 
-ENTRYPOINT ["source", "./jupyter-note-book-entrypoint.sh"]
+ENTRYPOINT ["bash", "./jupyter-note-book-entrypoint.sh"]
