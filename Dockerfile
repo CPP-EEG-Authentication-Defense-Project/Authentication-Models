@@ -4,7 +4,7 @@ ARG GH_AUTH_TOKEN
 
 RUN apt-get install -y git
 
-COPY requirements-concrete.txt ./requirements.txt
+COPY requirements.txt ./requirements.txt
 RUN git config --global url.https://$GH_AUTH_TOKEN@github.com/.insteadOf https://github.com/
 RUN pip install --no-cache-dir -r requirements.txt
 
