@@ -6,6 +6,7 @@ services:
       context: .
       args:
         - GH_AUTH_TOKEN=${GH_AUTH_TOKEN}
+        - NOTEBOOK_TOKEN=${NOTEBOOK_TOKEN}
     ports:
       - "8888:8888"
     restart: on-failure
