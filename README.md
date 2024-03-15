@@ -6,6 +6,27 @@ categories:
 2. Encrypted classifiers: learning-based models which use homomorphic encryption, based on [concrete-ml](https://github.com/zama-ai/concrete-ml).
 3. Hash based: models that use hashing, rather than learning, to authenticate data samples.
 
+## Running Experiments
+
+The experiments in this repository are setup as [Jupyter Notebooks](https://jupyter.org/). In order to simplify the 
+run environment dependencies, a `Dockerfile` is provided which will launch a notebook server with the required
+packages to execute the experiments. The following environment variables are required:
+
+- `GH_AUTH_TOKEN`: a GitHub authentication token to use to retrieve GitHub repository dependencies.
+- `NOTEBOOK_TOKEN`: a hex-based token to set for authentication against the notebook server.
+
+With the necessary environment variables defined, the image can be built with (if using Docker, replace `podman` with `docker`):
+
+```shell
+podman compose build
+```
+
+and then:
+
+```shell
+podman compose up
+```
+
 ## References
 
 The models tested in this repository leverages several sources to inspire the designs used, which include:
