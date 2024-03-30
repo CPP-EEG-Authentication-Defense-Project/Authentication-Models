@@ -8,6 +8,6 @@ RUN apt-get install -y git
 COPY requirements.txt ./requirements.txt
 RUN git config --global url.https://$GH_AUTH_TOKEN@github.com/.insteadOf https://github.com/
 RUN pip install --no-cache-dir -r requirements.txt
-RUN jupyter notebook --generate-config && echo "c.IdentityProvider.token = '$NOTEBOOK_TOKEN'" >> ~/.jupyter/jupyter_notebook_config.py
+RUN jupyter notebook --generate-config && echo "c.NotebookApp.token = '$NOTEBOOK_TOKEN'" >> ~/.jupyter/jupyter_notebook_config.py
 
 CMD ["/bin/bash", "-i", "/app/entry_point.sh"]
