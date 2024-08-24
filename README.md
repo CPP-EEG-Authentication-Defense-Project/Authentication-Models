@@ -9,23 +9,10 @@ categories:
 ## Running Experiments
 
 The experiments in this repository are setup as [Jupyter Notebooks](https://jupyter.org/). In order to simplify the 
-run environment dependencies, a `Dockerfile` is provided which will launch a notebook server with the required
-packages to execute the experiments. The following environment variables are required:
-
-- `GH_AUTH_TOKEN`: a GitHub authentication token to use to retrieve GitHub repository dependencies.
-- `NOTEBOOK_TOKEN`: a hex-based token to set for authentication against the notebook server.
-
-With the necessary environment variables defined, the image can be built with (if using Docker, replace `podman` with `docker`):
-
-```shell
-podman compose build
-```
-
-and then:
-
-```shell
-podman compose up
-```
+run environment dependencies, a [DevContainer](https://containers.dev/) environment is provided which 
+can be used to provide a common platform for installing the dependencies and running the experiments.
+Several of the dependencies for these experiments are GitHub repositories, so it may be necessary
+to provide credentials to be able to download them.
 
 ## References
 
