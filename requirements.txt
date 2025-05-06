@@ -11,4 +11,3 @@ git+https://github.com/CPP-EEG-Authentication-Defense-Project/Biohash-Implementa
 git+https://github.com/CPP-EEG-Authentication-Defense-Project/Feature-Encoding.git@0.0.33
 git+https://github.com/CPP-EEG-Authentication-Defense-Project/ssdeep-Implementation.git@0.0.4
 git+https://github.com/CPP-EEG-Authentication-Defense-Project/Bloom-Template-Implementation.git@0.1.3
-git+https://github.com/CPP-EEG-Authentication-Defense-Project/Token-Normalization.git@0.0.1
